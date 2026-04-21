@@ -13,15 +13,26 @@ This ensures that:
 
 - The solution is efficient and does not overload the network.
 
-**Architecture Overview:**
-
-The solution is based on three core components:
-
-1. Central Storage (File Server) --> the users can create their own "documents" and "Pictures"
-2. Access Control (AGDLP) --> to manage access 
-3. Group Policy (Folder Redirection) --> this is how the discussed mechanism is implemented
+---
+**AGDLP:**
 
 
-**1) Central Storage**
+## Account: 
 
-![something](images/win_lab3_p1.png)
+Ou_Verkoop with the accounts is there already. 
+
+## GLOBAL SECURITY GROUPS + DOMAIN LOCAL GROUPS
+
+Here we make the Global Security Group "GG_verkoop" and 
+The Domain Local group "DL_Verkoop_Folder_Redirect_Modify"
+
+![something](images/win_lab2_p1.png) 
+
+## Permissions 
+
+
+
+---
+
+## Network Connectivity
+![something](images/win_lab2_p9.png) 
