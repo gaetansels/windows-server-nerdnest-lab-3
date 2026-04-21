@@ -44,15 +44,43 @@ Next, I am making sure the share is hidden by going to "Advanced Sharing..." and
 
 I redid the shared permissions because they reset, so in the future, this step will be done first.
 
+## GPO 
+
+If you do the test now, someone from another department still sees an "E-folder". 
+In this step, we will be implementing the group policy. 
+
+Tools --> Group Policy Management --> Group Policy Objects. 
+
+On "Group Policy Objects" Right Mouse Click --> New --> .... file in the name and "OK"
+
+![something](images/win_lab3_p5.png) 
+
+After that, you do RMK and "edit" 
+
+Here you get 2 options ; we will be configuring it on user level so "User configuration"
+
+Here you navigate to "Folder Redirection" ; then you RMK Documents --> properties --> "Basic -redirect everyone's folder to the same location"
+
+![something](images/win_lab3_p6.png) 
+
+
+
+
+
+
+
+
+
+
 I am logging in with someone from Accounting : 
 
-![something](images/win_lab3_p5.png)  
+![something](images/win_lab3_p8.png)  
 
 And someone from Verkoop/ marketing to check : 
 
-![something](images/win_lab3_p6.png)  
+![something](images/win_lab3_p9.png)  
 
 ---
 
 ## Network Connectivity
-![something](images/win_lab3_p9.png) 
+![something](images/win_lab3_p11.png) 
