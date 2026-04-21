@@ -64,15 +64,14 @@ Here you navigate to "Folder Redirection" ; then you RMK Documents --> propertie
 ![something](images/win_lab3_p6.png) 
 
 Next, we add the file path 
-Because it is a hidden share we have to look up the file, and we can directly copy past the file path in the requested location. 
-don't forget the **$**
+Because it is a hidden share, we have to look up the file, and we can directly copy past the file path in the requested location.  ( because it is a hidden share)
+don't forget the **$** 
 
 ![something](images/win_lab3_p7.png) 
 
+"Create a folder for each user..." --> as you can see above "ok" , "cancel"  ... we get an example of what we want. 
 
-
-
-
+Click "OK" --> warning do you want to coninue ... click "yes"
 
 
 I am logging in with someone from Accounting : 
