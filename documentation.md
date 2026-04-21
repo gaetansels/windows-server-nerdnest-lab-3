@@ -97,13 +97,6 @@ We solved this by implementing the AGDLP model:
 - Global Groups were added to Domain Local Groups
 - Domain Local Groups were assigned NTFS permissions on the shared folder
 
-
-I am logging in with someone from Accounting : 
-
-![something](images/win_lab3_p19.png)  
-
-
-
 ---
 
 ## Network Connectivity
