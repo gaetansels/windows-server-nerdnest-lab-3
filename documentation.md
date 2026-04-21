@@ -38,6 +38,20 @@ Then we modify the access of the requested group:
 
 ![something](images/win_lab3_p3.png) 
 
+Next, I am making sure the share is hidden by going to "Advanced Sharing..." and adding a **dollar sign $** after the name.
+
+![something](images/win_lab3_p4.png) 
+
+I redid the shared permissions because they reset, so in the future, this step will be done first.
+
+I am logging in with someone from Accounting : 
+
+![something](images/win_lab3_p5.png)  
+
+And someone from Verkoop/ marketing to check : 
+
+![something](images/win_lab3_p6.png)  
+
 ---
 
 ## Network Connectivity
