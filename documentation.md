@@ -90,13 +90,19 @@ we can already see in the file path that it works and is stored in a central loc
 
 ![something](images/win_lab3_p10.png) 
 
+Initially, access to the share did not work because the users were not part of the correct security groups.
+
+We solved this by implementing the AGDLP model:
+- Users were added to Global Groups (GG_Verkoop) --> this was the step I missed, not only do the users need to be created in the OU but also added to the Global Group by selecting them all in the OU and adding them. 
+- Global Groups were added to Domain Local Groups
+- Domain Local Groups were assigned NTFS permissions on the shared folder
+
+
 I am logging in with someone from Accounting : 
 
 ![something](images/win_lab3_p19.png)  
 
-And someone from Verkoop/ marketing to check : 
 
-![something](images/win_lab3_p20.png)  
 
 ---
 
