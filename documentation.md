@@ -63,8 +63,9 @@ Here you navigate to "Folder Redirection" ; then you RMK Documents --> propertie
 
 ![something](images/win_lab3_p6.png) 
 
+Next, we add the file path 
 
-
+![something](images/win_lab3_p7.png) 
 
 
 
