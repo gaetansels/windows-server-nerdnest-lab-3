@@ -83,16 +83,22 @@ Now lets apply this to "verkoop" , we can easily do this by dragging and ropping
 
 ![something](images/win_lab3_p9.png) 
 
+Lets try with Anna Scott (anna.scott) from verkoop/marketing
+
+After having logged-in and having added a document and image.
+we can already see in the file path that it works and is stored in a central location on the network.
+
+![something](images/win_lab3_p10.png) 
 
 I am logging in with someone from Accounting : 
 
-![something](images/win_lab3_p11.png)  
+![something](images/win_lab3_p19.png)  
 
 And someone from Verkoop/ marketing to check : 
 
-![something](images/win_lab3_p12.png)  
+![something](images/win_lab3_p20.png)  
 
 ---
 
 ## Network Connectivity
-![something](images/win_lab3_p15.png) 
+![something](images/win_lab3_p21.png) 
