@@ -64,6 +64,8 @@ Here you navigate to "Folder Redirection" ; then you RMK Documents --> propertie
 ![something](images/win_lab3_p6.png) 
 
 Next, we add the file path 
+Because it is a hidden share we have to look up the file, and we can directly copy past the file path in the requested location. 
+don't forget the **$**
 
 ![something](images/win_lab3_p7.png) 
 
