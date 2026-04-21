@@ -29,8 +29,14 @@ The Domain Local group "DL_Verkoop_Folder_Redirect_Modify"
 ![something](images/win_lab3_p1.png) 
 
 ## Permissions 
+First, we make the folder_redirect file in the file server
+Then, as you can see below, we make sure the shared permissions is "full control"
+![something](images/win_lab3_p2.png) 
 
+In the NTFS permissions, we remove the inherited permissions and the unwanted groups or users with access. 
+Then we modify the access of the requested group: 
 
+![something](images/win_lab3_p3.png) 
 
 ---
 
