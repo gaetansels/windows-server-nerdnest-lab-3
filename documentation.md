@@ -73,16 +73,26 @@ don't forget the **$**
 
 Click "OK" --> warning do you want to coninue ... click "yes"
 
+We can easily "follow the document folder" to get the same result for the pictures 
+
+![something](images/win_lab3_p8.png) 
+
+Again "ok" and "Yes"
+
+Now lets apply this to "verkoop" , we can easily do this by dragging and ropping the GPO to the OU_verkoop : 
+
+![something](images/win_lab3_p9.png) 
+
 
 I am logging in with someone from Accounting : 
 
-![something](images/win_lab3_p8.png)  
+![something](images/win_lab3_p11.png)  
 
 And someone from Verkoop/ marketing to check : 
 
-![something](images/win_lab3_p9.png)  
+![something](images/win_lab3_p12.png)  
 
 ---
 
 ## Network Connectivity
-![something](images/win_lab3_p11.png) 
+![something](images/win_lab3_p15.png) 
