@@ -26,7 +26,7 @@ Ou_Verkoop with the accounts is there already.
 Here we make the Global Security Group "GG_verkoop" and 
 The Domain Local group "DL_Verkoop_Folder_Redirect_Modify"
 
-![something](images/win_lab2_p1.png) 
+![something](images/win_lab3_p1.png) 
 
 ## Permissions 
 
@@ -35,4 +35,4 @@ The Domain Local group "DL_Verkoop_Folder_Redirect_Modify"
 ---
 
 ## Network Connectivity
-![something](images/win_lab2_p9.png) 
+![something](images/win_lab3_p9.png) 
