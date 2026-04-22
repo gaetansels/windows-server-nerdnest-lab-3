@@ -152,7 +152,7 @@ Reconnect: Enabled
 
 Drag the policy to the Ou to which it applies 
 
-![something](images/win_lab3_p12.png)  
+![something](images/win_lab3_p13.png)  
 
 6. Test on client
 
