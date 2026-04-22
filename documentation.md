@@ -210,7 +210,26 @@ In powershell you can see which policies are active (not CMD , will give an erro
 
 The background is black because the selected image wasn't suitable, but the policy is enforced correctly. 
 
-## IT-department and access 
+## IT-department - Local Administrator Rights
 
+In this section, we configure a solution where IT users receive local administrative privileges on their workstations, without granting domain-wide administrative rights.
 
-![something](images/win_lab3_p21.png)  
+Scenario
+
+All users in the IT department must:
+
+- Have full administrative control over their local machine
+- Not have administrative rights over the domain
+
+To do this, we are going to work **similar** to AGDLP : 
+
+The IT-OU and accounts are already made and added to the a global group
+Next, we are going to make a new Domain Local security group to enforce this policy on  
+
+![something](images/win_lab3_p20.png)   
+
+Make sure that the Global IT group is part of the DL with the policy
+
+## MSI DEPLOYMENT 
+
+![something](images/win_lab3_p30.png)  
