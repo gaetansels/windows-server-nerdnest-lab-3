@@ -162,4 +162,55 @@ Mapped network drives appear under "This PC" because Windows treats them as loca
 
 ## GPO_background 
 
+The next goal is to configure a Group Policy to automatically set a desktop background for all domain users.
+
+This is done by first following AGDLP
+
+First we make the Global groups , they should all be there 
+Then we make the domain local group "DL_wallpaper_R" which will be used to give reading rights only and we add all the global groups as you can see below : 
+
+![something](images/win_lab3_p15.png)   
+
+Now the last step the Permissions : 
+
+- shared permision :
+  First we make it a secret folder in advanced sharing with the $ and then we give full permission
+  NOTE : if you don't add the **$** in this step you have to redo.
+  
+- NTFS (security) :
+  advanced --> disable inheritance --> convert inherited permissions ... ( top option)
+
+  Edit --> DL_wallpaper_R --> we keep things on standard reading rights 
+
+![something](images/win_lab3_p16.png)   
+
+in the DC we test the hidden file : \\FS1\wallpaper$ --> this file path we will also use... 
+
+**Next step: MAKING A POLICY**
+
+Tools --> Group Policy Management --> Group Policy Object (to make a new policy) --> New --> "Name :uc_wallpaper" --> edit
+
+In Edit : User Configuration --> Policies --> Administrative Templates --> Desktop --> Desktop --> Desktop Wallpaper --> Enable 
+
+Here we make sure the block is Enabled, and we are going to use the UNC path \ the name of the image 
+
+So you get : \\FS1\wallpaper$\company_wallpaper.jpg
+
+![something](images/win_lab3_p17.png)   
+
+The final step is to drag the policy to all the OU's it applies to. 
+
+![something](images/win_lab3_p18.png)   
+ 
+
+**testing:**
+In powershell you can see which policies are active (not CMD , will give an error). 
+
+![something](images/win_lab3_p19.png)   
+
+The background is black because the selected image wasn't suitable, but the policy is enforced correctly. 
+
+## IT-department and access 
+
+
 ![something](images/win_lab3_p21.png)  
