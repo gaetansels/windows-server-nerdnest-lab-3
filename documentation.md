@@ -99,9 +99,46 @@ We solved this by implementing the AGDLP model:
 
 ---
 
-## Network Connectivity
+## Network Connectivity / Network Drive Mapping via GPO
 
 In our previous Lab2, we configured a file share (file server).
 We will build on this to make sure users can access shared network files. 
 
+scenario 
+
+We will test this with users from Boekhouding and give access to the following shared folders:
+
+\\FS1\03_Boekhouding
+\\FS1\02_Administratie
+
+
+1. Open Group Policy Management
+
+Server Manager → Tools → Group Policy Management 
+
 ![something](images/win_lab3_p21.png) 
+
+2. Create a new GPO
+
+3. Edit the GPO
+
+4. Create Drive Mappings
+
+We create two mapped drives:
+
+- Boekhouding share :
+Action: Create
+Location: \\FS1\03_Boekhouding
+Drive Letter: B:
+Reconnect: Enabled
+
+
+- Administratie share :
+Action: Create
+Location: \\FS1\02_Administratie
+Drive Letter: A:
+Reconnect: Enabled
+
+5. Link the GPO to the OU
+
+6. Test on client
