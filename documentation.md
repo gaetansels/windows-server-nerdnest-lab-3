@@ -230,6 +230,27 @@ Next, we are going to make a new Domain Local security group to enforce this pol
 
 Make sure that the Global IT group is part of the DL with the policy
 
+**Configure Local Administrator Rights via GPO**
+
+To apply the permissions, we configure a Group Policy that adds the domain local group to the local Administrators group on client machines.
+
+Tools --> Group Policy Management --> New --> "Name: uc_local_admin_it" --> Edit 
+
+In Edit : Computer Configuration → Preferences → Control Panel Settings → Local Users and Groups
+
+![something](images/win_lab3_p21.png)   
+
+In "Local Users and Groups" RMK --> Mew --> Local Group 
+Action     = Update         
+Group name = Administrators 
+
+**Add...** --> next to name click **...** --> here you can use the prefix DL and check for "DL_local_adm"
+
+![something](images/win_lab3_p22.png)   
+
+
+This GPO adds the domain local group : "DL_local_adm" to the local admin group for all the IT-clients 
+
 ## MSI DEPLOYMENT 
 
 ![something](images/win_lab3_p30.png)  
