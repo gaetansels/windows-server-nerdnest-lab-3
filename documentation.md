@@ -156,5 +156,8 @@ Drag the policy to the Ou to which it applies
 
 6. Test on client
 
+![something](images/win_lab3_p14.png)  
+
+##GPO_background 
 
 ![something](images/win_lab3_p21.png)  
