@@ -133,10 +133,13 @@ In Drive maps RMK --> New -->  mapped drive
 
 ![something](images/win_lab3_p12.png)  
 
-
-
-
 We create two mapped drives:
+
+- Administratie share :
+Action: Create
+Location: \\FS1\02_Administratie
+Drive Letter: A:
+Reconnect: Enabled
 
 - Boekhouding share :
 Action: Create
@@ -145,11 +148,7 @@ Drive Letter: B:
 Reconnect: Enabled
 
 
-- Administratie share :
-Action: Create
-Location: \\FS1\02_Administratie
-Drive Letter: A:
-Reconnect: Enabled
+
 
 5. Link the GPO to the OU
 
