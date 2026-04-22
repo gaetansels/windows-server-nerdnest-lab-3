@@ -154,7 +154,7 @@ Drag the policy to the Ou to which it applies
 
 ![something](images/win_lab3_p13.png)  
 
-6. Test on client
+*4. Test on client*
 
 ![something](images/win_lab3_p14.png)  
 
