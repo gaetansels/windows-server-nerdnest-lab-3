@@ -251,6 +251,18 @@ Group name = Administrators
 
 This GPO adds the domain local group : "DL_local_adm" to the local admin group for all the IT-clients 
 
+Next in the main "Group Policy Management" screen drag "uc_local_admin_it" to apply it 
+
+![something](images/win_lab3_p23.png)   
+
+**TO TEST:**
+
+we will login with "andrew.gray" from the OU_IT
+
+![something](images/win_lab3_p24.png)   
+
+This confirms that the Group Policy was successfully applied, as the domain local group is now part of the local Administrators group.
+
 ## MSI DEPLOYMENT 
 
 ![something](images/win_lab3_p30.png)  
