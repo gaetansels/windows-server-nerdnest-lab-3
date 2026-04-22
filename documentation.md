@@ -104,7 +104,7 @@ We solved this by implementing the AGDLP model:
 In our previous Lab2, we configured a file share (file server).
 We will build on this to make sure users can access shared network files. 
 
-scenario 
+**scenario:**
 
 We will test this with users from Boekhouding and give access to the following shared folders:
 
@@ -112,15 +112,18 @@ We will test this with users from Boekhouding and give access to the following s
 \\FS1\02_Administratie
 
 
-1. Open Group Policy Management
+1. new GPO
+   
+Open Group Policy Management in DC
 
 Server Manager → Tools → Group Policy Management 
 
-![something](images/win_lab3_p21.png) 
+RMK on "Group Policy Objects" and click new to create a new GPO
+Because we are going to do this for both "boekhouding" and "administatie" we create 2 GPO's
 
-2. Create a new GPO
+![something](images/win_lab3_p11.png) 
 
-3. Edit the GPO
+2. Edit the GPO
 
 4. Create Drive Mappings
 
@@ -142,3 +145,6 @@ Reconnect: Enabled
 5. Link the GPO to the OU
 
 6. Test on client
+
+
+![something](images/win_lab3_p21.png)  
