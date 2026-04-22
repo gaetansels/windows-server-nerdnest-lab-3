@@ -112,7 +112,7 @@ We will test this with users from Boekhouding and give access to the following s
 \\FS1\02_Administratie
 
 
-1. new GPO
+*1. new GPO*
    
 Open Group Policy Management in DC
 
@@ -123,7 +123,7 @@ Because we are going to do this for both "boekhouding" and "administatie" we cre
 
 ![something](images/win_lab3_p11.png) 
 
-2. Edit the GPO + Creating Drive Mappings
+*2. Edit the GPO + Creating Drive Mappings*
 
 RNK on the policy and click "Edit"
 
