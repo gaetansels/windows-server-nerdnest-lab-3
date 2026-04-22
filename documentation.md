@@ -100,7 +100,8 @@ We solved this by implementing the AGDLP model:
 ---
 
 ## Network Connectivity
-In our previous lab2 we configured a file share. (file server). 
+
+In our previous Lab2, we configured a file share (file server).
 We will build on this to make sure users can access shared network files. 
 
 ![something](images/win_lab3_p21.png) 
