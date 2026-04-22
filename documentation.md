@@ -119,7 +119,7 @@ Open Group Policy Management in DC
 Server Manager → Tools → Group Policy Management 
 
 RMK on "Group Policy Objects" and click new to create a new GPO
-Because we are going to do this for both "boekhouding" and "administatie" we create 2 GPO's
+Because we are working with OU's we are going to make one policy for the "boekhouding" and "administatie" folders as this is what the Bookkeeping department needs. 
 
 ![something](images/win_lab3_p11.png) 
 
@@ -148,9 +148,11 @@ Drive Letter: B:
 Reconnect: Enabled
 
 
+*3. Link the GPO to the OU*
 
+Drag the policy to the Ou to which it applies 
 
-5. Link the GPO to the OU
+![something](images/win_lab3_p12.png)  
 
 6. Test on client
 
