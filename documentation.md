@@ -123,9 +123,18 @@ Because we are going to do this for both "boekhouding" and "administatie" we cre
 
 ![something](images/win_lab3_p11.png) 
 
-2. Edit the GPO
+2. Edit the GPO + Creating Drive Mappings
 
-4. Create Drive Mappings
+RNK on the policy and click "Edit"
+
+We go to "User configuration" --> Preferences --> Windows Settings --> Drive Maps 
+
+In Drive maps RMK --> New -->  mapped drive 
+
+![something](images/win_lab3_p12.png)  
+
+
+
 
 We create two mapped drives:
 
