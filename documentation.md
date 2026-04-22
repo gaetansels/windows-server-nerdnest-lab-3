@@ -270,13 +270,12 @@ The goal is to configure automatic software deployment using Group Policy, to in
 This will be applied to the OU_IT.
 The installation is performed automatically using an .msi package.
 
-**1. Download & prepare MSI**
+### 1. Download & prepare MSI
 - Download VLC Media Player in the **.msi format** (not .exe)
 - Place the file in the shared SYSVOL location:
   
   \\dc1\sysvol\nerdnest.test\Policies\Software\VLC\
-
-**2. Create GPO**
+### 2. Create GPO
 - Create a new Group Policy Object
 - Link the GPO to the **OU_IT**
 - (Optional best practice)
