@@ -303,12 +303,21 @@ Deploy Software --> Select Assigned
 
 
 ### 3. Test
+---
+**IMPORTANT !!!!
+
+The policy is focused on computer configuration this time so it should be linked to my client 1 not the account of the IT person  
+
+
+![something](images/win_lab3_p29.png) 
+
+---
 - Run on the client:
 
   gpupdate /force
 
 - Restart the client machine :
 shutdown /r /t 0 
-- VLC should install automatically during startup
+- VLC should install automatically during startup --> appwiz.cpl
 
-![something](images/win_lab3_p30.png)  
+final part did not work, need more debugging to find issue. 
