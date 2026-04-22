@@ -275,32 +275,40 @@ The installation is performed automatically using an .msi package.
 - Place the file in the shared SYSVOL location:
   
   \\dc1\sysvol\nerdnest.test\Policies\Software\VLC\
+
+![something](images/win_lab3_p25.png)   
+
+If you want to test the file path you can copy past it in run and see if it opens the file in the file location. 
+  
 ### 2. Create GPO
-- Create a new Group Policy Object
+
+- First, I am going to create a DL group to which to apply the policy directly to : 
+
+![something](images/win_lab3_p26.png) 
+
+- Create a new Group Policy Object :
+
+Tools --> Group Policy Management --> Group policy Object --> RMK --> New --> "Name: cc_software_vlc_it " --> Edit 
+
+In Edit : Computer Configuration --> Policies --> Software Settings --> Software installed --> New --> Package...
+
+![something](images/win_lab3_p27.png) 
+
+Deploy Software --> Select Assigned 
+
+
 - Link the GPO to the **OU_IT**
-- (Optional best practice)
-  - Apply the policy via a Domain Local group (DL)
-  - Add the Global Group (GG_IT) to this DL group
 
-### 3. Configure software installation
-- Open the GPO in **Group Policy Management**
-- Navigate to:
+![something](images/win_lab3_p28.png) 
 
-  Computer Configuration → Policies → Software Settings → Software Installation
 
-- Add a new package:
-  - Use the **UNC path**:
-  
-    \\dc1\sysvol\nerdnest.test\Policies\Software\VLC\vlc.msi
-  
-  - Deployment method: **Assigned**
-
-### 4. Test
+### 3. Test
 - Run on the client:
 
   gpupdate /force
 
-- Restart the client machine
+- Restart the client machine :
+shutdown /r /t 0 
 - VLC should install automatically during startup
 
 ![something](images/win_lab3_p30.png)  
