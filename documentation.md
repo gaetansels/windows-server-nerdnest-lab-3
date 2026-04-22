@@ -158,7 +158,7 @@ Drag the policy to the Ou to which it applies
 
 ![something](images/win_lab3_p14.png)  
 
-Network drives (A:, B:) are mapped to shared folders on the file server. The actual data is stored on the server, while the mapped drives provide users with an easy and consistent way to access these resources.
+Mapped network drives appear under "This PC" because Windows treats them as local drives, making access to network resources more intuitive for users.
 
 ## GPO_background 
 
