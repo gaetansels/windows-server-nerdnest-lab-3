@@ -158,6 +158,8 @@ Drag the policy to the Ou to which it applies
 
 ![something](images/win_lab3_p14.png)  
 
+Network drives (A:, B:) are mapped to shared folders on the file server. The actual data is stored on the server, while the mapped drives provide users with an easy and consistent way to access these resources.
+
 ## GPO_background 
 
 ![something](images/win_lab3_p21.png)  
