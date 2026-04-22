@@ -263,6 +263,45 @@ we will login with "andrew.gray" from the OU_IT
 
 This confirms that the Group Policy was successfully applied, as the domain local group is now part of the local Administrators group.
 
-## MSI DEPLOYMENT 
+## MSI DEPLOYMENT
+
+The goal is to configure automatic software deployment using Group Policy, to install VLC Media Player.
+
+This will be applied to the OU_IT.
+The installation is performed automatically using an .msi package.
+
+**1. Download & prepare MSI**
+- Download VLC Media Player in the **.msi format** (not .exe)
+- Place the file in the shared SYSVOL location:
+  
+  \\dc1\sysvol\nerdnest.test\Policies\Software\VLC\
+
+**2. Create GPO**
+- Create a new Group Policy Object
+- Link the GPO to the **OU_IT**
+- (Optional best practice)
+  - Apply the policy via a Domain Local group (DL)
+  - Add the Global Group (GG_IT) to this DL group
+
+### 3. Configure software installation
+- Open the GPO in **Group Policy Management**
+- Navigate to:
+
+  Computer Configuration → Policies → Software Settings → Software Installation
+
+- Add a new package:
+  - Use the **UNC path**:
+  
+    \\dc1\sysvol\nerdnest.test\Policies\Software\VLC\vlc.msi
+  
+  - Deployment method: **Assigned**
+
+### 4. Test
+- Run on the client:
+
+  gpupdate /force
+
+- Restart the client machine
+- VLC should install automatically during startup
 
 ![something](images/win_lab3_p30.png)  
